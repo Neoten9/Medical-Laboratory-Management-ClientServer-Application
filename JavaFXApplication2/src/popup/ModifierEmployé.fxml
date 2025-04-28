@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="popup.ModifierEmployéController">
+    <stylesheets>
+        <URL value="@/javafxapplication2/css/ajouterunpatient.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="61.0" layoutY="57.0" text="Nom :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AENomInput" layoutX="61.0" layoutY="84.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <TextField fx:id="AEPrenomInput" layoutX="279.0" layoutY="84.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <ChoiceBox fx:id="AEGenreInput" layoutX="501.0" layoutY="84.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <DatePicker fx:id="AEDateNaissanceInput" layoutX="61.0" layoutY="269.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <TextField fx:id="AETelephoneInput" layoutX="279.0" layoutY="175.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <TextField fx:id="AEMotDePassInput" layoutX="501.0" layoutY="175.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <TextField fx:id="AEEmailInput" layoutX="279.0" layoutY="269.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <Label layoutX="279.0" layoutY="57.0" text="Prenom :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="501.0" layoutY="57.0" text="Sexe :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="242.0" text="Date de naissance :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="148.0" text="Telephone :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="501.0" layoutY="148.0" text="Mot de pass :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="242.0" text="E-mail :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Pane onMouseClicked="#ModifierPersonnel"  layoutX="179.0" layoutY="364.0" prefHeight="45.0" prefWidth="200.0" styleClass="prime-btn" stylesheets="@../javafxapplication2/css/listdedemande.css">
+         <children>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="25.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Vectorsave.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="69.0" layoutY="11.0" text="Sauvegarder" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="401.0" layoutY="364.0" onMouseClicked="#AnnulerAjouterEmployé" prefHeight="45.0" prefWidth="181.0" styleClass="cancel-btn" stylesheets="@../javafxapplication2/css/listdedemande.css">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="28.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Group%2039annuler.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="80.0" layoutY="12.0" text="Annuler" textFill="#fe4230">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ChoiceBox fx:id="AEPositionInput" layoutX="61.0" layoutY="175.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <Label layoutX="59.0" layoutY="148.0" text="Role :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

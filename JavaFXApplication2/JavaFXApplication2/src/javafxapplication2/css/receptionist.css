@@ -1,0 +1,104 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.mainFxmlClass {
+    -fx-background-color: #f9f9f9;
+}
+
+.nav-bar {
+    -fx-background-color: #f9f9f9;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 20, 0, 0, 0);
+}
+
+.accueil-background {
+    -fx-background-color: #ececec;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 5px;
+    -fx-border-color: #018D9A;
+}
+
+.nav-item-background {
+    -fx-background-color: #f9f9f9;
+}
+
+.nav-item-background:hover {
+    -fx-background-color: #ececec;
+    -fx-cursor: hand;
+}
+
+.card1 {
+    -fx-background-color: #dfdfdf;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 20, 0, 0, 0);
+}
+
+.card2 {
+    -fx-background-color: #ababab;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 20, 0, 0, 0);
+}
+
+.card3 {
+    -fx-background-color: #a1a1a1;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 20, 0, 0, 0);
+}
+
+.card4 {
+    -fx-background-color: #c6c6c6;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 20, 0, 0, 0);
+}
+
+.card5 {
+    -fx-background-color: #b4b4b4;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 20, 0, 0, 0);
+}
+
+.card6 {
+    -fx-background-color: #dfdfdf;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 20, 0, 0, 0);
+}
+
+.card1-active {
+    -fx-background-color: #FBD75A;
+}
+.card2-active {
+    -fx-background-color: #6B93DB;
+}
+.card3-active {
+    -fx-background-color: #E7594B;
+}
+.card4-active {
+    -fx-background-color: #94BADE;
+}
+.card5-active {
+    -fx-background-color: #50C29C;
+}
+.card6-active {
+    -fx-background-color: #FBD75A;
+}
+
+.card1-active:hover {
+    -fx-cursor: hand;
+}
+.card2-active:hover {
+    -fx-cursor: hand;
+}
+.card3-active:hover {
+    -fx-cursor: hand;
+}
+.card4-active:hover {
+    -fx-cursor: hand;
+}
+.card5-active:hover {
+    -fx-cursor: hand;
+}
+.card6-active:hover {
+    -fx-cursor: hand;
+}
+

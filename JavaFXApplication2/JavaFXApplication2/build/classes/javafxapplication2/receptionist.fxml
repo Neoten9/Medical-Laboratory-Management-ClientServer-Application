@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="687.0" prefWidth="1359.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.ReceptionistController">
+    <stylesheets>
+        <URL value="@/javafxapplication2/css/receptionist.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="1.0" prefHeight="687.0" prefWidth="190.0" styleClass="nav-bar" stylesheets="@css/receptionist.css">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="70.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/lab-logo%201.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="UserNameLabel" layoutX="78.0" layoutY="154.0" text="Mohcin" textFill="#636363">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="47.0" layoutX="121.0" layoutY="110.0" startX="-100.0" stroke="#d9d9d9" />
+            <Line endX="47.0" layoutX="122.0" layoutY="272.0" startX="-100.0" stroke="#d9d9d9" />
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Group%2069personne.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="306.0" prefHeight="46.0" prefWidth="190.0" styleClass="accueil-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="12.0" text="Accueil" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Group%2013accueil.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="200.0" onMouseClicked="#LogOut" prefHeight="46.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="78.0" layoutY="11.0" text="Log-out" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="25.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Group%2014logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="359.0" onMouseClicked="#GoToListDeDemande" prefHeight="52.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="16.0" text="Reception" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/espace-de-travail%201.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="387.0" layoutY="156.0" onMouseClicked="#GoToListDeDemande" prefHeight="171.0" prefWidth="251.0" stylesheets="@css/receptionist.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="81.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/espace-de-travail%201.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="132.0" styleClass="card-label" stylesheets="@css/receptionist.css" text="Reception" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="card1-active" />
+            <String fx:value="card1" />
+         </styleClass>
+      </Pane>
+      <Pane layoutX="659.0" layoutY="156.0" prefHeight="171.0" prefWidth="182.0" styleClass="card2" stylesheets="@css/receptionist.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="47.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/document%201bw.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="132.0" styleClass="card-label" stylesheets="@css/receptionist.css" text="Plan" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="863.0" layoutY="156.0" prefHeight="171.0" prefWidth="251.0" styleClass="card3" stylesheets="@css/receptionist.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="83.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/timbre%201bw.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="132.0" styleClass="card-label" stylesheets="@css/receptionist.css" text="Validation" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="387.0" layoutY="344.0" prefHeight="171.0" prefWidth="190.0" styleClass="card4" stylesheets="@css/receptionist.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="51.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/grille%201bw%20(1).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="132.0" styleClass="card-label" stylesheets="@css/receptionist.css" text="Stock" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="597.0" layoutY="344.0" prefHeight="171.0" prefWidth="301.0" styleClass="card5" stylesheets="@css/receptionist.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="104.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/la-finance%201bw.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="132.0" styleClass="card-label" stylesheets="@css/receptionist.css" text="Finance" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="917.0" layoutY="344.0" prefHeight="171.0" prefWidth="197.0" styleClass="card6" stylesheets="@css/receptionist.css">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="89.0" layoutX="54.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/homme%201bw.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="132.0" styleClass="card-label" stylesheets="@css/receptionist.css" text="Personnel" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

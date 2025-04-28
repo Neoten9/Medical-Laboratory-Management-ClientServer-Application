@@ -1,0 +1,30 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #f9f9f9;
+}
+
+.popup-input {
+    -fx-background-color: #E0E0E0;
+    -fx-border-style: unset;
+    -fx-background-radius: 5px;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+}
+
+.custom-label {
+    -fx-padding: 0 0 0 20px;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 170px;
+    -fx-font: Arial Bold;
+    -fx-font-size: 16px;
+    -fx-font-style: Bold;
+}
+
+.hbox-title {
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0.5px 0;
+    -fx-border-color: #000;
+}

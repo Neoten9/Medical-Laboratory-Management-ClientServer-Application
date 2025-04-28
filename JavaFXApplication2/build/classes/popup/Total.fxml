@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="308.0" prefWidth="749.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="popup.TotalController">
+    <stylesheets>
+        <URL value="@/javafxapplication2/css/ajouterunpatient.css" />
+    </stylesheets>
+   <children>
+      <DatePicker layoutX="59.0" layoutY="65.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <Label layoutX="279.0" layoutY="168.0" text="Payé :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="501.0" layoutY="168.0" text="Reste :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="34.0" text="Date :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="168.0" text="Montant :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Pane layoutX="59.0" layoutY="196.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css">
+         <children>
+            <Label layoutX="23.0" layoutY="10.0" text="45000.00 DA" textFill="#1f76c7">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="279.0" layoutY="196.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css">
+         <children>
+            <Label layoutX="23.0" layoutY="10.0" text="30000.00 DA" textFill="#26d66c">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="501.0" layoutY="196.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css">
+         <children>
+            <Label layoutX="23.0" layoutY="10.0" text="15000.00 DA" textFill="#f9603e">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

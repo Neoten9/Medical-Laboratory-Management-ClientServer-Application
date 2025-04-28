@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="400.0" maxWidth="1350.0" prefHeight="400.0" prefWidth="1350.0" stylesheets="@css/listdedemande.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.SelectionDesAnalysesController">
+    <Pane prefHeight="687.0" prefWidth="190.0" styleClass="nav-bar" stylesheets="@css/receptionist.css">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="70.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/lab-logo%201.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="UserNameLabel" layoutX="78.0" layoutY="154.0" text="Mohcin" textFill="#636363">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="47.0" layoutX="121.0" layoutY="110.0" startX="-100.0" stroke="#d9d9d9" />
+            <Line endX="47.0" layoutX="122.0" layoutY="272.0" startX="-100.0" stroke="#d9d9d9" />
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Group%2069personne.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="306.0" onMouseClicked="#GoToAccueilReceptionist" prefHeight="46.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="12.0" text="Accueil" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Group%2013accueil.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="200.0" onMouseClicked="#GoToListDeDemande" prefHeight="46.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="78.0" layoutY="11.0" text="Go Back" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="25.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/VectorGo%20back.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="359.0" prefHeight="52.0" prefWidth="190.0" styleClass="accueil-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="16.0" text="Reception" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/espace-de-travail%201.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   <Pane layoutX="202.0" layoutY="12.0" prefHeight="225.0" prefWidth="1130.0" styleClass="patient-info-background" stylesheets="@css/selectiondesanalyses.css">
+      <children>
+         <TextField fx:id="PatientInfo" layoutX="26.0" layoutY="34.0" prefHeight="35.0" prefWidth="455.0" styleClass="search-bar" stylesheets="@css/listdedemande.css">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font></TextField>
+         <TextField layoutX="513.0" layoutY="34.0" prefHeight="35.0" prefWidth="280.0" styleClass="search-bar" stylesheets="@css/listdedemande.css">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font></TextField>
+         <TextField layoutX="823.0" layoutY="34.0" prefHeight="35.0" prefWidth="280.0" styleClass="search-bar" stylesheets="@css/listdedemande.css">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font></TextField>
+         <TextArea layoutX="27.0" layoutY="107.0" prefHeight="90.0" prefWidth="765.0" styleClass="search-bar" stylesheets="@css/listdedemande.css">
+            <font>
+               <Font name="Arial Bold" size="16.0" />
+            </font></TextArea>
+         <Label layoutX="26.0" layoutY="12.0" text="Patient :" textFill="#7a7a7a">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="513.0" layoutY="12.0" text="Medcine refirant :" textFill="#7a7a7a">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="823.0" layoutY="12.0" text="Demander le :" textFill="#7a7a7a">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="26.0" layoutY="84.0" text="Remarque :" textFill="#7a7a7a">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </Label>
+         <Pane layoutX="936.0" layoutY="147.0" prefHeight="50.0" prefWidth="167.0" styleClass="prime-btn" stylesheets="@css/listdedemande.css">
+            <children>
+               <Label layoutX="35.0" layoutY="15.0" text="Sauvegarder" textFill="WHITE">
+                  <font>
+                     <Font name="Arial Bold" size="16.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+      </children>
+   </Pane>
+   <TabPane layoutX="202.0" layoutY="248.0" prefHeight="439.0" prefWidth="1157.0" stylesheets="@css/selectiondesanalyses.css" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="Les analyses">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="317.0" prefWidth="1136.0">
+                  <children>
+                     <ScrollPane layoutX="11.0" layoutY="67.0" prefHeight="317.0" prefWidth="398.0" style="-fx-background-color: transparent; -fx-background-radius: 10px;" styleClass="nav-bar" stylesheets="@css/receptionist.css">
+                        <content>
+                           <TableView prefHeight="322.0" prefWidth="378.0">
+                             <columns>
+                               <TableColumn prefWidth="207.0" text="Nom de l'analyse" />
+                               <TableColumn prefWidth="109.0" text="Code" />
+                                 <TableColumn prefWidth="61.0" text="x" />
+                             </columns>
+                           </TableView>
+                        </content>
+                     </ScrollPane>
+                     <TextField layoutX="9.0" layoutY="14.0" prefHeight="46.0" prefWidth="399.0" promptText="le nom ou code d’analyse" styleClass="search-bar" stylesheets="@css/listdedemande.css">
+                        <font>
+                           <Font name="Arial Bold" size="16.0" />
+                        </font>
+                     </TextField>
+                     <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="374.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../img/Vector%20search.png" />
+                        </image>
+                     </ImageView>
+                     <Pane layoutX="424.0" layoutY="14.0" prefHeight="371.0" prefWidth="707.0" style="-fx-background-radius: 10px;" styleClass="nav-bar" stylesheets="@css/receptionist.css">
+                        <children>
+                           <ScrollPane layoutX="20.0" layoutY="44.0" prefHeight="327.0" prefWidth="667.0" style="-fx-background-color: transparent; -fx-background-radius: 10px;" styleClass="nav-bar">
+                              <content>
+                                 <TableView prefHeight="357.0" prefWidth="652.0">
+                                    <columns>
+                                       <TableColumn prefWidth="232.0" text="Nom de l'analyse" />
+                                       <TableColumn prefWidth="93.0" text="Code" />
+                                       <TableColumn prefWidth="181.0" text="Prix" />
+                                       <TableColumn prefWidth="145.0" text="x" />
+                                    </columns>
+                                 </TableView>
+                              </content>
+                           </ScrollPane>
+                           <Label layoutX="20.0" layoutY="14.0" text="Les analyses demandé">
+                              <font>
+                                 <Font name="Arial Bold" size="20.0" />
+                              </font>
+                           </Label>
+                        </children>
+                     </Pane>
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+       <Tab text="prélèvement">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <TableView layoutX="14.0" layoutY="14.0" prefHeight="239.0" prefWidth="598.0">
+                       <columns>
+                         <TableColumn prefWidth="160.0" text="échantillions" />
+                         <TableColumn prefWidth="143.0" text="Source" />
+                           <TableColumn prefWidth="140.0" text="Analyse" />
+                           <TableColumn prefWidth="154.0" text="x" />
+                       </columns>
+                     </TableView>
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+         <Tab text="paiement">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <Pane layoutX="10.0" layoutY="9.0" prefHeight="267.0" prefWidth="828.0" style="-fx-background-radius: 10px;" styleClass="nav-bar" stylesheets="@css/receptionist.css">
+                        <children>
+                           <TextField layoutX="42.0" layoutY="80.0" prefHeight="50.0" prefWidth="200.0" style="-fx-text-fill: #1F76C7;" styleClass="search-bar" stylesheets="@css/listdedemande.css">
+                              <font>
+                                 <Font name="Arial Bold" size="16.0" />
+                              </font>
+                           </TextField>
+                           <Label layoutX="42.0" layoutY="48.0" text="Mantant :" textFill="#7a7a7a">
+                              <font>
+                                 <Font name="Arial Bold" size="16.0" />
+                              </font>
+                           </Label>
+                           <TextField layoutX="275.0" layoutY="80.0" prefHeight="50.0" prefWidth="200.0" style="-fx-text-fill: #26D66C;" styleClass="search-bar">
+                              <font>
+                                 <Font name="Arial Bold" size="16.0" />
+                              </font>
+                           </TextField>
+                           <TextField layoutX="512.0" layoutY="80.0" prefHeight="50.0" prefWidth="200.0" style="-fx-text-fill: #F9603E;" styleClass="search-bar">
+                              <font>
+                                 <Font name="Arial Bold" size="16.0" />
+                              </font>
+                           </TextField>
+                           <Label layoutX="275.0" layoutY="48.0" text="Payé :" textFill="#7a7a7a">
+                              <font>
+                                 <Font name="Arial Bold" size="16.0" />
+                              </font>
+                           </Label>
+                           <Label layoutX="512.0" layoutY="48.0" text="Reste :" textFill="#7a7a7a">
+                              <font>
+                                 <Font name="Arial Bold" size="16.0" />
+                              </font>
+                           </Label>
+                           <Pane layoutX="629.0" layoutY="181.0" prefHeight="50.0" prefWidth="167.0" styleClass="prime-btn" stylesheets="@css/listdedemande.css">
+                              <children>
+                                 <Label layoutX="44.0" layoutY="15.0" text="Imp ticket " textFill="WHITE">
+                                    <font>
+                                       <Font name="Arial Bold" size="16.0" />
+                                    </font>
+                                 </Label>
+                              </children>
+                           </Pane>
+                        </children>
+                     </Pane>
+                  </children>
+               </AnchorPane>
+           </content>
+         </Tab>
+     </tabs>
+   </TabPane>
+</AnchorPane>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1350.0" style="-fx-background-color: #f9f9f9;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gerant.PersonnelController">
+    <Pane prefHeight="687.0" prefWidth="190.0" styleClass="nav-bar" stylesheets="@../javafxapplication2/css/receptionist.css">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="70.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/lab-logo%201.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="78.0" layoutY="154.0" text="Mohcin" textFill="#636363">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="47.0" layoutX="121.0" layoutY="110.0" startX="-100.0" stroke="#d9d9d9" />
+            <Line endX="47.0" layoutX="122.0" layoutY="272.0" startX="-100.0" stroke="#d9d9d9" />
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Group%2069personne.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="306.0" prefHeight="46.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="12.0" text="Accueil" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Group%2013accueil.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="200.0" prefHeight="46.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="78.0" layoutY="11.0" text="Log-out" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="25.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Group%2014logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="359.0" prefHeight="52.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="16.0" text="Stock" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/grille%201.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="413.0" prefHeight="52.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="16.0" text="Finance" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/la-finance%201.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="469.0" prefHeight="52.0" prefWidth="190.0" styleClass="accueil-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="16.0" text="Personnel" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/homme%201.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   <TextField layoutX="210.0" layoutY="18.0" prefHeight="50.0" prefWidth="440.0" styleClass="search-bar" stylesheets="@../javafxapplication2/css/listdedemande.css">
+      <font>
+         <Font name="Arial Bold" size="16.0" />
+      </font>
+   </TextField>
+   <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="614.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../img/Vector%20search.png" />
+      </image>
+   </ImageView>
+   <Pane layoutX="675.0" layoutY="18.0" prefHeight="50.0" prefWidth="190.0" styleClass="prime-btn" stylesheets="@../javafxapplication2/css/listdedemande.css">
+      <children>
+         <Label layoutX="61.0" layoutY="15.0" text="Nouveau" textFill="WHITE">
+            <font>
+               <Font name="Arial Bold" size="16.0" />
+            </font>
+         </Label>
+      </children>
+   </Pane>
+   <ScrollPane layoutX="210.0" layoutY="82.0" prefHeight="605.0" prefWidth="1108.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: transparent;" styleClass="nav-bar" stylesheets="@../javafxapplication2/css/receptionist.css">
+      <content>
+         <TableView prefHeight="585.0" prefWidth="1106.0" stylesheets="@../javafxapplication2/css/listdedemande.css">
+           <columns>
+             <TableColumn prefWidth="93.0" text="  ID" />
+             <TableColumn prefWidth="282.0" text="    Nom et Prenom" />
+               <TableColumn prefWidth="226.0" text="    Role" />
+               <TableColumn prefWidth="223.0" text="    Telephone" />
+               <TableColumn prefWidth="196.0" text="     Mot de pass" />
+               <TableColumn prefWidth="85.0" text="x" />
+           </columns>
+         </TableView>
+      </content>
+   </ScrollPane>
+</AnchorPane>

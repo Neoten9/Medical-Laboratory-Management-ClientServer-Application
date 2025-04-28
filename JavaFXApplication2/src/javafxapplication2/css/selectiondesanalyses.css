@@ -1,0 +1,60 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #f9f9f9;
+}
+
+.patient-info-background {
+    -fx-background-color: #f9f9f9;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.2), 20, 0, 0, 0);
+    -fx-background-radius: 5px;
+}
+
+* {
+	-fx-primary-color: #018D9A;
+	-fx-secondary-color: #018D9A;
+
+	-fx-focus-color: -fx-secondary-color;
+}
+
+.tab-header-area .tab-header-background {
+ 	-fx-background-color: transparent;
+}
+.tab-pane .tab:selected {
+	-fx-background-color: -fx-secondary-color;
+	-fx-background-insets: 0 5 0 5;
+        -fx-cursor:default;
+}
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab{
+    -fx-background-color: #d9d9d9;
+    -fx-border-radius: 5px;
+    -fx-padding: 0 15 0 15;
+    -fx-background-insets: 0 5 0 5;
+    -fx-cursor: hand;
+}
+
+.tab .tab-label { 
+ 	-fx-alignment: CENTER;
+	-fx-text-fill: #5b5b5b;
+	-fx-font-weight: bold;
+        -fx-font-size: 16px;
+	-fx-padding: 0 10 0 10;
+}
+.tab-pane:top *.tab-header-area {
+	/*-fx-padding: 0 0 0 30;*/
+	
+	/* NO SPACE LEFT OF FIRST TAB */
+	/* -fx-padding: 0 0 0 30; */
+}
+.tab-pane {
+	-fx-background-color: transparent;
+	-fx-tab-min-width: 100px;
+	-fx-tab-min-height: 50px;
+	-fx-tab-max-height: 50px;
+}

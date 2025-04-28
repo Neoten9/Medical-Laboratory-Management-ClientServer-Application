@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="453.0" prefWidth="526.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="popup.PaiementEmployeController">
+    <stylesheets>
+        <URL value="@/javafxapplication2/css/ajouterunpatient.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="61.0" layoutY="57.0" text="Nom :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="61.0" layoutY="84.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <TextField layoutX="279.0" layoutY="84.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <DatePicker layoutX="279.0" layoutY="175.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <TextField layoutX="61.0" layoutY="274.0" prefHeight="45.0" prefWidth="200.0" style="-fx-text-fill: #018D9A;" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font></TextField>
+      <Label layoutX="279.0" layoutY="57.0" text="Prenom :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="148.0" text="Date :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="249.0" text="Montant :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <Pane layoutX="61.0" layoutY="369.0" prefHeight="45.0" prefWidth="200.0" styleClass="prime-btn" stylesheets="@../javafxapplication2/css/listdedemande.css">
+         <children>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="25.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Vectorsave.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="69.0" layoutY="11.0" text="Sauvegarder" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="279.0" layoutY="369.0" prefHeight="45.0" prefWidth="181.0" styleClass="cancel-btn" stylesheets="@../javafxapplication2/css/listdedemande.css">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="28.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Group%2039annuler.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="80.0" layoutY="12.0" text="Annuler" textFill="#fe4230">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ChoiceBox layoutX="61.0" layoutY="175.0" prefHeight="45.0" prefWidth="200.0" styleClass="popup-input" stylesheets="@../javafxapplication2/css/ajouterunpatient.css" />
+      <Label layoutX="59.0" layoutY="148.0" text="Role :" textFill="#808080">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

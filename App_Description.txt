@@ -1,0 +1,17 @@
+Description :
+
+This is a client-server application designed for managing a medical laboratory. It provides different interfaces for various roles within the laboratory:
+
+Manager (Gérant): Manages the stock, finances, and personnel.
+
+Biologist (Biologiste): Handles samples, performs analyses, and inputs results into the system for doctors to review.
+
+Receptionist (Réceptionniste): Registers patients, records their information, and manages the cash register.
+
+Doctor (Médecin): Consults patient analyses and generates reports based on the results.
+
+Each role has its own specific interface for efficient and organized management within the laboratory.
+
+Note:
+
+This application is my graduation project and is still under development. While it covers the core functionalities for managing a medical laboratory, some small details and additional features may be added in the future.

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="1350.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PlanEtValidation.ValiderResultatController">
+    <stylesheets>
+        <URL value="@/javafxapplication2/css/validerresultat.css" />
+    </stylesheets>
+    <Pane prefHeight="687.0" prefWidth="190.0" styleClass="nav-bar" stylesheets="@../javafxapplication2/css/receptionist.css">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="51.0" layoutX="70.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/lab-logo%201.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="UserNameLabel" layoutX="78.0" layoutY="154.0" text="Mohcin" textFill="#636363">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Line endX="47.0" layoutX="121.0" layoutY="110.0" startX="-100.0" stroke="#d9d9d9" />
+            <Line endX="47.0" layoutX="122.0" layoutY="272.0" startX="-100.0" stroke="#d9d9d9" />
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Group%2069personne.png" />
+               </image>
+            </ImageView>
+            <Pane layoutY="306.0" onMouseClicked="#GoBack" prefHeight="46.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="12.0" text="Accueil" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="27.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Group%2013accueil.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="200.0" onMouseClicked="#GoBack" prefHeight="46.0" prefWidth="190.0" styleClass="nav-item-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="78.0" layoutY="11.0" text="Go Back" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="25.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/VectorGo%20back.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutY="359.0" prefHeight="52.0" prefWidth="190.0" styleClass="accueil-background" stylesheets="@css/receptionist.css">
+               <children>
+                  <Label layoutX="77.0" layoutY="16.0" text="Validation" textFill="#636363">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="25.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/timbre%201.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="555.0" layoutY="12.0" prefHeight="289.0" prefWidth="781.0" styleClass="patient-info-background" stylesheets="@../javafxapplication2/css/selectiondesanalyses.css">
+      <children>
+         <TextField fx:id="resultatPatient" layoutX="27.0" layoutY="36.0" prefHeight="35.0" prefWidth="341.0" styleClass="search-bar" stylesheets="@../javafxapplication2/css/listdedemande.css">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font></TextField>
+         <TextField fx:id="CodeTube" layoutX="385.0" layoutY="36.0" prefHeight="35.0" prefWidth="250.0" styleClass="search-bar" stylesheets="@../javafxapplication2/css/listdedemande.css">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font></TextField>
+         <TextField fx:id="dateDemande" layoutX="385.0" layoutY="109.0" prefHeight="35.0" prefWidth="250.0" styleClass="search-bar" stylesheets="@../javafxapplication2/css/listdedemande.css">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font></TextField>
+         <Label layoutX="27.0" layoutY="13.0" text="Patient :" textFill="#7a7a7a">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="385.0" layoutY="13.0" text="Code de tube :" textFill="#7a7a7a">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="387.0" layoutY="87.0" text="Demander le :" textFill="#7a7a7a">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </Label>
+         <Pane layoutX="462.0" layoutY="217.0" onMouseClicked="#valider" prefHeight="50.0" prefWidth="173.0" styleClass="prime-btn" stylesheets="@../javafxapplication2/css/listdedemande.css">
+            <children>
+               <Label layoutX="60.0" layoutY="15.0" text="Valider" textFill="WHITE">
+                  <font>
+                     <Font name="Arial Bold" size="16.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+         <TextField fx:id="medcinRefirant" layoutX="27.0" layoutY="109.0" prefHeight="35.0" prefWidth="341.0" styleClass="search-bar" stylesheets="@../javafxapplication2/css/listdedemande.css">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </TextField>
+         <Label layoutX="27.0" layoutY="87.0" text="Medcine refirant :" textFill="#7a7a7a">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </Label>
+         <TextArea fx:id="RemarqueR" layoutX="27.0" layoutY="187.0" prefHeight="80.0" prefWidth="341.0">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </TextArea>
+         <Label layoutX="27.0" layoutY="160.0" text="Remarque :" textFill="#7a7a7a">
+            <font>
+               <Font name="Arial Bold" size="14.0" />
+            </font>
+         </Label>
+      </children>
+   </Pane>
+   <ScrollPane layoutX="210.0" layoutY="13.0" prefHeight="674.0" prefWidth="335.0" style="-fx-background-radius: 10px; -fx-background-color: transparent;" styleClass="nav-bar" stylesheets="@../javafxapplication2/css/receptionist.css">
+      <content>
+         <VBox fx:id="validationVbox" prefHeight="680.0" prefWidth="320.0">
+            <children>
+               <HBox prefHeight="50.0" prefWidth="439.0" styleClass="hbox-title" stylesheets="@../javafxapplication2/css/ajouterunpatient.css">
+                  <children>
+                     <Label prefHeight="49.0" prefWidth="100.0" text="N°">
+                        <font>
+                           <Font name="Arial Bold" size="16.0" />
+                        </font>
+                        <padding>
+                           <Insets left="15.0" />
+                        </padding>
+                     </Label>
+                     <Label layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="150.0" text="Analyse">
+                        <font>
+                           <Font name="Arial Bold" size="16.0" />
+                        </font>
+                        <padding>
+                           <Insets left="10.0" />
+                        </padding>
+                     </Label>
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+      </content>
+   </ScrollPane>
+   <ScrollPane fx:id="scrollPane" layoutX="555.0" layoutY="318.0" prefHeight="369.0" prefWidth="781.0" style="-fx-background-radius: 10px; -fx-background-color: transparent;" styleClass="nav-bar" stylesheets="@../javafxapplication2/css/receptionist.css" />
+</AnchorPane>
